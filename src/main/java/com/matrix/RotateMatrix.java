@@ -3,6 +3,10 @@ package com.matrix;
 public class RotateMatrix<T> {
 
     public void rotate(T[][] matrix) {
+        
+        if (matrix==null) {
+          System.out.println("empty matrix.");
+        }
 
         //do transpose of matrix
         for (int i = 0; i < matrix.length; i++) {
